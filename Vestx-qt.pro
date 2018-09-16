@@ -67,6 +67,11 @@ contains(USE_QRCODE, 1) {
     LIBS += -lqrencode
 }
 
+macx{
+MINIUPNPC_LIB_PATH = /Users/william/Downloads/miniupnpc-1.9.20150730
+MINIUPNPC_INCLUDE_PATH = /Users/william/Downloads/miniupnpc-1.9.20150730
+}
+
 # use: qmake "USE_UPNP=1" ( enabled by default; default)
 #  or: qmake "USE_UPNP=0" (disabled by default)
 #  or: qmake "USE_UPNP=-" (not supported)
